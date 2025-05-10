@@ -231,3 +231,7 @@ footer {
     font-family: var(--paragraph-font);
     letter-spacing: 0.05rem;
 }
+
+.footer-p {
+    color: #f8f53b;
+}
