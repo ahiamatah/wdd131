@@ -5,8 +5,8 @@ const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
 // Add event listener to the Add Chapter button
-button.addEventListener('click', () => {
-  const chapter = input.value.trim(); // Clean input
+button.addEventListener('click', function() {
+  const chapter = input.value.trim(); // removes unnecessary white space
 
   if (chapter !== '') {
     // Create list item and delete button
@@ -16,16 +16,16 @@ button.addEventListener('click', () => {
     // Set contents
     li.textContent = chapter;
     deleteButton.textContent = '❌';
-    deleteButton.setAttribute('aria-label', `Remove ${chapter}`);
-
-    // Append delete button to list item
-    li.appendChild(deleteButton);
+    // deleteButton.setAttribute('aria-label', `Remove ${chapter}`); this code is only necessary if we want to add a screen reader for delete button
 
     // Append list item to the list
     list.appendChild(li);
+    // Append delete button to list item
+    li.appendChild(deleteButton);
+
 
     // Add event listener to delete button
-    deleteButton.addEventListener('click', () => {
+    deleteButton.addEventListener('click', function() {
       list.removeChild(li);
     });
 
