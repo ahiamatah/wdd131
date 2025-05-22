@@ -1,0 +1,74 @@
+/* 
+temples-large.css
+*/
+
+/* 
+media query for tablets
+*/
+
+@media ((min-width: 401px) and (max-width: 799px)){
+    
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button {
+    display: block;
+    }
+
+    body{
+        height: auto;
+        width: 100%;
+        margin: 0 auto;
+        /* border: rgb(255, 0, 140) solid; */
+    }
+    main {
+        /* border: red solid 1rem; */
+        width: 100%;
+        margin: 0 auto;
+    
+    }
+
+    #figure-container {
+        width: 100%;
+        /* border: rgb(0, 60, 255) solid 1rem; */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 
+media query for desktops
+*/
+
+@media (min-width: 800px){
+    .hideOnMobile{
+        display: flex;
+    }
+
+    .menu-button {
+    display: none;
+    }
+
+    body{
+        /* border: rgb(255, 0, 140) solid; */
+        width: auto;
+
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        /* border: red solid 1rem; */
+        margin: 0 auto;
+    }
+
+
+    #figure-container {
+        width: 100%;
+        /* border: rgb(0, 60, 255) solid 1rem; */
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
