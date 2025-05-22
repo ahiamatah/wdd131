@@ -108,6 +108,10 @@ main h1 {
     margin-bottom: 0;
 }
 
+figcaption {
+    font-family: var(--paragraph-font);
+}
+
 footer {
     background-color: var(--h1-background-color);
     text-align: center;
