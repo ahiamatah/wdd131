@@ -25,21 +25,23 @@ media query for desktops
         position: absolute;
         top: 70px;
         left: 70px;
-        background-color: rgba(255, 255, 255, 0.26);
+        background-color: rgba(255, 255, 255, 0.459);
         backdrop-filter: blur(10px);
         
     }
 
+    
     #weather{
         position: absolute;
         bottom: 70px;
         right: 70px;
-        background-color: rgba(255, 255, 255, 0.26);
-        backdrop-filter: blur(5px);
+        background-color: rgba(255, 255, 255, 0.459);
+        backdrop-filter: blur(10px);
     }
 
     #data h2, #weather h2 {
-        background-color: var(--accent-color-2);
+        background-color: #B22234;
+        color: white;
         text-align: left;
         width: 90%;
         margin-left: -20px;
