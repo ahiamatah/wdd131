@@ -1,0 +1,67 @@
+/* places desktop css */
+
+/*
+media query for desktops
+*/
+
+@media (min-width: 900px){
+
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 3rem;
+    }
+
+
+    main {
+        position: relative;
+    }
+
+    
+
+    #data {
+        position: absolute;
+        top: 70px;
+        left: 70px;
+        background-color: rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(10px);
+        
+    }
+
+    #weather{
+        position: absolute;
+        bottom: 70px;
+        right: 70px;
+        background-color: rgba(255, 255, 255, 0.26);
+        backdrop-filter: blur(5px);
+    }
+
+    #data h2, #weather h2 {
+        background-color: var(--accent-color-2);
+        text-align: left;
+        width: 90%;
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+
+    #whether-mobile-logo {
+        padding: 0;
+        width: 20%;
+        position: relative;
+        top: -70px;
+        left: 20%;
+    }
+
+    #weather-info-container {
+        margin-top: -55px;
+    }
+
+    footer {
+        margin: 0 auto;
+        margin-top: -5px;
+        padding: 3rem;
+    }
+}
+

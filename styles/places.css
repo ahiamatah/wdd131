@@ -1,0 +1,78 @@
+/*places.css main*/
+/* places mobile */
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --h1-font: 'Montserrat', 'sans-serif';
+    --h2-font: 'Roboto', 'sans-serif';
+    --paragraph-font: 'Montserrat', 'sans-serif';
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --accent-color: #174E70;
+    --accent-color-2: #f8f53b;
+    --accent-color-4: #808080;
+    --h1-background-color: #174e70;
+    --h1-text-color: #ffffff;
+    --nav-background-color: #000000;
+    --nav-text-color: #FFFFFF;
+    --nav-hover-background-color: grey;
+    --nav-hover-text-color: #f8f53b;
+}
+
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: var(--h1-background-color);
+    color: var(--h1-text-color);
+    font-family: var(--h1-font);
+    text-align: center;
+    padding: 2rem;
+}
+
+section {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+section h2 {
+    padding: 1rem;
+}
+
+
+#weather-info-container, #data-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem 1rem;
+    width: 80%;
+    padding: 2rem;
+}
+
+#weather-info-container dt, #data-info-container dt{
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+}
+
+#weather-info-container dd, #data-info-container dd{
+    width: 100%;
+    text-align: left;
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: var(--h1-background-color);
+    color: var(--nav-text-color);
+    font-family: var(--paragraph-font);
+    letter-spacing: 0.05rem;
+    padding: 2rem;
+}
+
+.footer-p {
+    color: #f8f53b;
+}
