@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --h1-font: 'Montserrat', 'sans-serif';
+    --h2-font: 'Roboto', 'sans-serif';
+    --paragraph-font: 'Montserrat', 'sans-serif';
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --accent-color: #174E70;
+    --accent-color-2: #f8f53b;
+    --accent-color-4: #808080;
+    --h1-background-color: #174e70;
+    --h1-text-color: #ffffff;
+    --nav-background-color: #000000;
+    --nav-text-color: #FFFFFF;
+    --nav-hover-background-color: grey;
+    --nav-hover-text-color: #f8f53b;
+}
+
+html {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background-color: var(--h1-background-color);
+    color: var(--h1-text-color);
+    font-family: var(--h1-font);
+    letter-spacing: 0.05rem;
+    padding: 2rem;
+}
+main img{
+    display: block;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* adding fade in animation */
+
+@keyframes fadeFromBlack {
+    0% {
+        opacity: 0;
+        filter: brightness(0);
+    }
+    100% {
+        opacity: 1;
+        filter: brightness(1);
+    }
+}
+
+.lazy-img {
+    animation: fadeFromBlack 1.5s ease-in-out forwards;
+    opacity: 0;
+    filter: brightness(0);
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    background-color: var(--h1-background-color);
+    color: var(--nav-text-color);
+    font-family: var(--paragraph-font);
+    letter-spacing: 0.05rem;
+    padding: 2rem;
+}
+
+.footer-p {
+    color: #f8f53b;
+}

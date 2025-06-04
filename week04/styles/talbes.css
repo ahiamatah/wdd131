@@ -1,0 +1,50 @@
+#table-container{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bold;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+caption {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+}
+
+th {
+    padding: 1rem;
+    background-color: rgba(34, 33, 33, 0.897);
+    color: white;
+}
+
+#empty-th {
+    background-color: black;
+}
+
+td {
+    padding: 1rem;
+    text-align: center;
+    border: solid rgba(73, 73, 73, 0.116) 1px;
+}
+
+.check {
+    color: blue;
+}
+
+tr:nth-child(3n){
+    background-color: rgba(73, 73, 73, 0.301);
+}
+
+figcaption {
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 0.5rem;
+}

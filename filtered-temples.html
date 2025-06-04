@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="filtered-temples.html">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="./scripts/filtered-temples.js" defer></script>
+    <meta name="author" content="Prince Eli Ahiamatah">
+    <meta name="description" content="WDD 131 Week 02 Temples Assignment">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <!--mobile nav-->
+        <nav class="sidebar" aria-label="Mobile Navigation">
+            <a onclick="hideSidebar()" class="close-button"   href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+
+        <!-- main nav -->
+        <nav aria-label="Main Navigation">
+            <h1 id="name-logo">Temple Album</h1>
+            <a class="hideOnMobile" href="#">Home</a>
+            <a class="hideOnMobile" href="#">Old</a>
+            <a class="hideOnMobile" href="#">New</a>
+            <a class="hideOnMobile" href="#">Large</a>
+            <a class="hideOnMobile" href="#">Small</a>
+            <a onclick="showSidebar()" class="menu-button" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+        </nav>
+    </header>
+    <main>
+        <h1>Temples Around the World</h1>
+        <div id="figure-container">
+            
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Prince Eli Ahiamatah | Ghana</p>
+        <p class="footer-p">Last Modified: <span id="currentdate"></span></p>
+    </footer>    
+</body>
+</html>
