@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Prince Eli Ahiamatah">
+    <meta name="description" content="WDD 131 Week 05 Forms - Review Assignment">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="styles/forms-desktop.css">
+    <link rel="stylesheet" href="styles/forms-review.css">
+    <title>review</title>
+</head>
+<body>
+    <header>
+        <h1>FORMS - Review</h1>
+    </header>
+
+    <main>
+        <h1>Review Submitted</h1>
+        <p>Thank you! Your product review has been submitted.</p>
+        <p>You have submitted <span id="reviewCount">0</span> reviews.</p>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Prince Eli Ahiamatah | Ghana</p>
+        <p class="footer-p">Last Modified: <span id="currentdate"></span></p>
+    </footer>
+
+    <script>
+        // Increment localStorage counter
+        let count = Number(localStorage.getItem('reviewCount')) || 0;
+        count++;
+        localStorage.setItem('reviewCount', count);
+        document.getElementById('reviewCount').textContent = count;
+        document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
+</body>
+</html>

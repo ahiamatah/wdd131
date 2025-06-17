@@ -1,0 +1,26 @@
+/* forms desktop css */
+
+/*
+media query for desktops
+*/
+
+@media (min-width: 900px){
+
+    *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 3rem;
+    }
+
+
+
+
+    footer {
+        margin: 0 auto;
+        margin-top: -5px;
+        padding: 3rem;
+    }
+}
+
