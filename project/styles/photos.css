@@ -38,12 +38,17 @@ header {
     background-color: var(--primary-color);
 }
 
-h1 {
+h3 {
     font-family: var(--h1-font);
     font-weight:900;
     font-size: 2.5rem;
     color: var(--secondary-color);
     letter-spacing: 0.15rem;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    font-weight: lighter;
 }
 
 header nav {
@@ -63,6 +68,12 @@ nav a{
     color: var(--accent-3-color);
     /* border: #000000 solid ; */
     width: 10%;
+}
+
+a{
+    font-family: var(--paragraph-font);
+    text-decoration: none;
+    color: var(--secondary-color);
 }
 
 nav a:hover {
@@ -129,34 +140,9 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-#about-button {
-    margin-top: 2rem;
-    padding: 7px 14px;
-    font-size: 15px;
-    background-color: var(--primary-color);
-    display: block;
-    border:solid var(--secondary-color);
-    border-radius: 6px;
-    cursor: pointer;
-    margin-bottom: 2rem;
-}
 
-#about-button a {
-    text-decoration: none;
-    font-family: var(--h3-font);
-    background-color: none;
-    font-size: larger;
-    letter-spacing: .1rem;
-    color: var(--accent-3-color);
-}
 
-#about-button:hover {
-    background-color: var(--secondary-color);
-}
 
-#about-button a:hover {
-    color: var(--accent-1-color);
-}
 
 
 main {
@@ -166,7 +152,24 @@ main {
     margin: 0 auto;
 }
 
+#page-summary {
+    margin: 1rem 3rem;
+    border: #396E94 solid;
+}
 
+#images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+figcaption {
+    margin-top: .2rem;
+}
+
+/* footer */
 footer {
     color: var(--accent-1-color);
     background-color: var(--primary-color);
