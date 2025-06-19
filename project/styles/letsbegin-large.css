@@ -23,6 +23,16 @@ media query for tablets
     letter-spacing: 0.15rem;
     }
 
+    section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    height: 100%;
+}
+
 
 }
 
@@ -130,6 +140,8 @@ media query for desktops
         max-width: 1200px;
         padding: 2rem;
     }
+
+    
 
     #page-summary {
         grid-column: 1/4;
