@@ -6,7 +6,7 @@ temples-large.css
 media query for tablets
 */
 
-@media ((min-width: 401px) and (max-width: 949px)){
+@media ((min-width: 470px) and (max-width: 949px)){
     
     .hideOnMobile{
         display: none;

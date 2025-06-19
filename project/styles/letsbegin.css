@@ -120,7 +120,7 @@ h2 {
     font-size: 4rem;
     /* text-transform: uppercase; */
     font-weight: 100;
-}
+} /*another h2 declaration i media querry */
 
 
 h3 {
@@ -218,7 +218,7 @@ footer a:hover {
 
 /*media query for smart phones*/
 
-@media (max-width: 400px) {
+@media (max-width: 469px) {
     .sidebar {
         width: 100%;
     }
@@ -228,4 +228,17 @@ footer a:hover {
     .menu-button {
     display: block;
     }
+
+    section h2{
+    font-family: var(--h1-font);
+    font-size: 3rem;
+    /* text-transform: uppercase; */
+    font-weight: 100;
+    border: solid;
+    }
+
+    section  {
+        width: 80%;
+    }
+
 }
