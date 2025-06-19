@@ -19,7 +19,6 @@ media query for tablets
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 2rem;
-    border: solid pink;
     margin-bottom: 2rem;
     }
 
