@@ -73,6 +73,10 @@ nav img {
     margin-right: auto;
 }
 
+#logo-image {
+    cursor: pointer;
+}
+
 .sidebar {
     box-sizing: border-box;
     position: fixed;
@@ -106,7 +110,7 @@ main {
 
 #profile-pic-container {
     margin-top: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 h2 {
