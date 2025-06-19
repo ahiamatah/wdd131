@@ -10,6 +10,8 @@
     --primary-color: #171717;
     --secondary-color: #396E94;
     --accent-1-color: #FFFFFF;
+    --accent-1-1-color: #ffffff9c;
+    --accent-1-2-color: #ffffff6b;
     --accent-2-color: #1D1D1D;
     --accent-3-color: #5D5D5D;
 }
@@ -66,7 +68,7 @@ header nav {
 nav a{
     font-family: var(--paragraph-font);
     text-decoration: none;
-    color: var(--accent-3-color);
+    color: var(--accent-1-1-color);
     /* border: #000000 solid ; */
     width: 10%;
 }
@@ -74,7 +76,7 @@ nav a{
 a{
     font-family: var(--paragraph-font);
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--accent-1-1-color);
 }
 
 nav a:hover {
@@ -129,11 +131,6 @@ h2 {
 }
 
 
-h3 {
-    font-family: var(--h3-font);
-    font-size: xx-large;
-}
-
 /* Grid */
 
 body {
@@ -180,7 +177,7 @@ footer {
 footer p, footer a{
     font-family: var(--paragraph-font);
     text-decoration: none;
-    color: var(--accent-3-color);
+    color: var(--accent-1-2-color);
     margin: 1rem auto;
 }
 
