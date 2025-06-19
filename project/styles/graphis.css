@@ -129,8 +129,12 @@ h2 {
 
 
 h3 {
-    font-family: var(--h3-font);
-    font-size: xx-large;
+    font-family: var(--h1-font);
+    font-weight:200;
+    padding-bottom: .5rem;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    letter-spacing: 0.15rem;
 }
 
 /* Grid */
