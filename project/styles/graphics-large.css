@@ -15,7 +15,12 @@ media query for tablets
     display: block;
     }
 
-
+    #images-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    }
 
 }
 
@@ -49,12 +54,12 @@ media query for desktops
 
 
     h2 {
-    font-family: var(--h1-font);
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 0.15rem;
-}
+        font-family: var(--h1-font);
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: 100;
+        letter-spacing: 0.15rem;
+    }
 
 
     h3 {
@@ -62,22 +67,19 @@ media query for desktops
         font-size: xx-large;
     }
 
-    main {
-        margin: 5rem auto;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        max-width: 1200px;
-        padding: 2rem;
+    #page-summary {
+        width: 80%;
+        margin: 1rem auto;
+        margin-bottom: 0;
     }
 
-    #profile-pic-container {
-        margin: 0 auto;
-        align-content: center;
+   #images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    margin-bottom: 2rem;
     }
 
-    #profile-pic-container img {
-        width: 400px;
-    }
 
     #welcome {
         margin: 0 auto;
@@ -85,15 +87,11 @@ media query for desktops
         line-height: 5rem;
     }
 
-    #begin-button {
-        margin-top: 1rem;
-        padding: 8px 13px;
-        font-size: 18px;
-        background-color: var(--primary-color);
-        border: solid var(--secondary-color);
-        border-radius: 6px;
-        cursor: pointer;
+    figure img{
+        width: 25rem;
     }
+
+
 
     footer {
         padding: 3rem;
